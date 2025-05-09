@@ -99,9 +99,11 @@ class MovieViewSet(
     def get_serializer_class(self):
         if self.action == "list":
             return MovieListSerializer
-        elif self.action == "retrieve":
+
+        if self.action == "retrieve":
             return MovieDetailSerializer
-        elif self.action == "upload_image":
+
+        if self.action == "upload_image":
             return MovieImageSerializer
 
         return MovieSerializer

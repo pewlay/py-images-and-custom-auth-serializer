@@ -148,8 +148,7 @@ class MovieSessionDetailSerializer(MovieSessionSerializer):
             "show_time",
             "movie",
             "cinema_hall",
-            "taken_places",
-            "movie"
+            "taken_places"
         )
 
 
